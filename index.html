@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=0.8;"/>
+    <title>henrygd</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" class="current" type="text/css" href="css/nighthawks.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+      <!-- scripts.js = minified/combined: meny.js transition.js jquery.cookie.js -->
+    <script>if($.cookie("css")){$("link.current").attr("href",$.cookie("css"))}$(document).ready(function(){$("#styles li a").click(function(){$("link.current").attr("href",$(this).attr("rel"));$.cookie("css",$(this).attr("rel"),{expires:365,path:"/"});return false})})</script>
+      <!-- ^ Changes theme and caches choice -->
+  </head>
+  <body>
+  <div class="meny">
+    <ul>
+      <h2>Menu</h2>
+        <li><a onclick="document.getElementById('home').click();" href="#">Home</a></li>
+        <li><a onclick="document.getElementById('contact').click();" href="#">Contact Form</a></li>
+        <li><a href="https://github.com/henrygd/henrygd.github.io">Fork on GitHub</a></li>
+    </ul>
+    <ul id="styles">
+      <h2>Themes</h2>
+        <li><a href="#" id="motel" rel="css/motel.css">Motel</a></li>
+        <li><a href="#" id="eastern" rel="css/eastern.css">Eastern</a></li>
+        <li><a href="#" id="western" rel="css/western.css">Western</a></li>
+        <li><a href="#" id="nighthawks" rel="css/nighthawks.css">Nighthawks</a></li>
+    </ul>
+  </div>
+  <svg style="visibility:hidden;" onclick="meny.open()" viewBox="0 0 80 80" class="meny-arrow"><path fill="#000" opacity="0.5" d="M0 0L80 0 80 80 0 80 0 0M11 23L11 28C25.7 28 40.3 28 55 28L55 23C40.3 23 25.7 23 11 23M59.7 30C61.8 32.3 64 34.6 66.1 36.9 47.8 37.1 29.4 37 11 37L11 42C29.4 42 47.8 41.9 66.2 42.1 64 44.4 61.9 46.7 59.7 49 60.5 49.8 61.3 50.6 62 51.4 65.9 47.5 69.8 43.6 73.7 39.7 70 35.5 66 31.5 62 27.6 61.3 28.4 60.5 29.2 59.7 30M11 52L11 57C25.7 57 40.3 57 55 57L55 52C40.3 52 25.7 52 11 52Z"/><path fill="#fff" d="M11 23C25.7 23 40.3 23 55 23L55 28C40.3 28 25.7 28 11 28L11 23Z"/><path fill="#fff" d="M59.7 30C60.5 29.2 61.3 28.4 62 27.6 66 31.5 70 35.5 73.7 39.7 69.8 43.6 65.9 47.5 62 51.4 61.3 50.6 60.5 49.8 59.7 49 61.9 46.7 64 44.4 66.2 42.1 47.8 41.9 29.4 42 11 42L11 37C29.4 37 47.8 37.1 66.1 36.9 64 34.6 61.8 32.3 59.7 30Z"/><path fill="#fff" d="M11 52C25.7 52 40.3 52 55 52L55 57C40.3 57 25.7 57 11 57L11 52Z"/></svg>
+  <div class="pt-wrapper">
+    <div class="pt-page pt-page-1">
+      <div class="intro">
+        <svg viewBox="0 0 4367 1057" aria-labelledby="intro_title"><title id="intro_title">Hello!</title>
+        <path d="M2303 0c42 1 84 2 126 3 26 1 55 10 71 32 17 24 18 55 17 83 -2 106-5 212-7 318 -0 20-5 41-21 55 -17 14-39 18-61 18 -45-1-91-2-136-3C2296 337 2299 169 2303 0zM2362 446c20 0 40 2 60 1 11-0 20-11 19-22 2-103 4-206 6-309 0-11 2-23-3-34 -3-9-13-16-23-17 -17-1-35-1-52-2C2367 191 2365 318 2362 446z"/><path d="M1691 38c11-19 32-29 53-31 22-2 44-2 65-2 27-0 57 9 71 35 18 32 11 71 14 107 -23 1-46 1-69 2 -1-20 0-39-3-58 -2-12-12-23-26-23 -13 0-26-2-38 5 -11 8-12 23-12 35 3 103 6 206 9 309 0 14 7 31 23 33 18 2 36-1 55-1 -1-41-2-83-4-124 -12 0-24 1-36 1 -1-20-1-41-2-62 35-1 70-2 104-3 2 82 5 164 7 247 -46 1-92 3-137 4 -24 1-50-7-63-27 -15-22-16-50-16-75 -3-97-5-194-8-291C1679 91 1677 62 1691 38z"/><path d="M2678 12c23-3 47 0 71 1 26 1 54 2 74 19 21 17 26 46 24 72 -5 112-11 224-16 336 -1 27-11 57-36 71 -30 16-65 8-97 8 -29-1-62-3-81-28 -20-26-16-60-14-90 5-99 10-198 14-297 1-22 3-46 16-64C2644 24 2661 15 2678 12zM2702 75c-12 4-16 17-16 28 -5 106-10 212-16 318 -0 9-0 20 7 27 8 9 21 8 32 9 12 0 24 2 36 0 12-3 17-15 17-26 5-107 11-215 16-322 1-9-0-20-8-26 -9-8-22-7-33-8C2726 74 2714 71 2702 75z"/><path d="M1375 21c23-2 45-3 68-5 -20 106-40 212-60 317 -1 5-2 10-1 16 4 59 8 119 12 178 -23 2-46 3-69 5 -4-59-8-118-12-177 -0-5-1-10-3-14 -35-103-69-205-104-308 23-2 45-3 68-5 22 72 44 145 67 217C1355 171 1364 96 1375 21zM2957 24c23 2 46 3 69 5 -11 148-22 296-33 443 31 2 63 5 94 7 -2 20-3 41-5 61 -54-4-108-8-163-12C2932 360 2944 192 2957 24zM3202 44c23 2 46 5 68 7 -14 148-29 295-43 443 31 3 62 6 94 9 -2 20-4 41-6 61 -54-5-108-11-162-16C3169 380 3186 212 3202 44z"/><path d="M917 62c45-4 89-9 134-13 17-2 36-0 51 9 31 19 35 58 37 90 3 35 7 70 10 105 2 23 1 47-11 66 -5 8-13 15-21 20 23 68 45 137 68 205 -22 2-43 4-65 6 -22-66-43-133-65-199 -14 2-27 3-41 4 7 68 13 136 20 203 -23 2-46 5-69 6C950 397 934 229 917 62zM992 116c6 61 12 121 17 182 15-2 31-3 46-5 8-1 16-4 21-11 7-10 5-22 5-33 -4-36-7-72-11-108 -1-14-10-28-25-29C1027 112 1010 115 992 116z"/><path d="M3452 70c25 4 50 6 75 10 9 101 17 201 25 302 34-95 67-191 101-286 25 3 50 7 75 10 -22 167-43 335-65 502 -23-3-45-6-68-9 11-75 23-150 34-225 5-33 11-65 14-98 -26 76-53 151-80 227 -17-2-35-5-53-7 -7-80-13-160-20-240 -12 108-23 217-35 325 -23-3-46-6-68-9C3408 405 3430 238 3452 70zM736 83c23-3 46-6 68-9 21 167 43 335 65 502 -23 3-45 6-68 9 -4-31-8-62-12-92 -1-5-2-10-4-15 -33-70-65-141-99-211 14 109 28 218 42 327 -23 3-45 6-68 9 -22-167-43-335-65-502 23-2 46-7 68-8 34 75 68 151 101 226 1 2 2 4 4 6 -3-8-3-16-5-24C755 228 745 155 736 83zM330 142c56-9 112-18 168-27 3 20 7 41 10 61 -33 5-67 11-100 16 8 50 17 101 25 151 30-5 59-10 89-14 3 20 7 41 10 61 -30 5-59 10-89 14 9 55 18 111 27 166 33-5 67-11 100-16 3 20 7 41 10 61 -56 9-112 18-168 27C384 475 356 308 330 142z"/><path d="M3866 140c29-13 60-3 89 1 24 3 50 9 67 28 18 20 19 48 15 73 -23 138-46 276-69 415 -23-4-45-8-68-11 10-61 20-122 30-183 -26-4-52-9-77-13 -10 61-20 122-30 183 -23-4-45-8-68-11 23-139 46-278 69-416C3828 179 3840 151 3866 140zM3891 223c-9 55-18 110-27 165 26 4 52 9 77 13 9-55 18-109 27-164 2-9 2-19-4-26 -6-8-17-10-26-11 -11-2-23-5-33 0C3896 205 3892 214 3891 223z"/><path d="M150 173c23-5 45-9 68-14 33 166 66 331 98 497 -23 5-45 9-68 13 -15-75-30-150-45-225 -28 5-55 11-83 16 15 75 30 150 45 226 -23 5-45 9-68 13C66 534 33 369 0 203c23-5 45-9 68-14 14 70 28 141 42 211 28-5 55-11 83-16C178 314 164 244 150 173zM4061 674c33-165 66-331 99-496 23 5 45 9 67 14 8 84 15 168 25 252 16-79 32-158 47-237 23 5 45 9 68 14 -33 165-66 331-99 496 -23-4-45-9-68-14 6-33 14-67 19-100 -8-79-18-159-27-238 -22 108-43 216-65 323C4106 683 4084 678 4061 674zM1984 419c24 0 49-1 73-1 0 29 1 57 1 86 -24 0-49 1-73 1C1984 476 1984 447 1984 419zM1109 805c8 0 16 0 24 0 -2 19-4 38-6 57 -5 0-9 0-13 0C1113 843 1112 824 1109 805zM1148 805c8 0 16 0 24 0 -2 19-4 38-6 57 -5 0-9 0-13 0C1152 843 1151 824 1148 805zM3137 805c8 0 16 0 24 0 -2 19-4 38-6 57 -5 0-9 0-13 0C3141 843 3140 824 3137 805zM3176 805c8 0 16 0 24 0 -2 19-4 38-6 57 -5 0-9 0-13 0C3180 843 3179 824 3176 805zM1423 820c8 0 15 0 22 0 -2 17-4 34-5 51 -4 0-8 0-12 0C1427 854 1425 837 1423 820zM1205 831c6-2 13-2 19-0 3 3 3 7 3 11 0 23 0 47 0 71 13 0 26 0 38 0 1-26-1-53 1-80 7-4 18-5 23 1 1 57 0 113 1 170 -1 5 1 11-2 14 -7 1-16 3-22-2 -1-26 0-53-1-79 -13 0-26 0-38 0 -0 25 0 51-0 76 0 8-9 6-14 6 -4 0-11-0-10-6 -1-56 0-112-0-168C1203 840 1201 834 1205 831zM1322 844c-1-7 5-13 11-13 15-1 30-0 45 0 11 0 8 16 5 23 -12 4-25 1-37 2 0 19 0 38 0 57 12 1 26-2 38 2 2 7 2 14 0 21 -12 4-26 1-38 2 0 19 0 38 0 58 12 1 25-2 37 1 3 6 3 16-0 22 -16 3-32 1-47 1 -9 1-15-7-14-15C1322 950 1322 897 1322 844z"/><path d="M1641 874c-1-23 20-44 43-44 24-1 46 20 45 44 0 45 0 90 0 136 0 4-1 9-6 9 -6-0-14 2-18-3 -1-26 0-52-1-78 -13 0-26 0-39 0 -0 25 0 50-0 75 0 8-9 6-14 6 -4 0-10-1-10-6C1641 966 1641 920 1641 874zM1667 869c-2 14-1 29-1 44 13 0 26 0 39 0 -1-15 2-30-2-45C1697 851 1671 851 1667 869z"/><path d="M1762 838c-1-4 2-9 6-8 7-0 20-2 18 8 0 52 0 104 0 156 12 0 24-1 36 1 5 6 5 17 0 23 -12 2-24 1-36 1 -7-1-15 2-20-3 -5-4-4-10-4-15C1762 946 1761 892 1762 838zM1971 831c7-2 23-5 22 7 0 59 1 118-1 177 -5 5-18 5-23 0 -1-57 0-114-1-171C1969 840 1967 834 1971 831zM2141 841c-1-5 1-13 8-12 6 0 17-2 17 6 1 25 0 50 0 76 13 0 26 0 38 0 1-27-1-53 1-80 5-4 13-2 19-2 5 0 5 7 5 11 0 56 0 112 0 168 2 12-17 11-24 6 -2-26 0-53-1-79 -13 0-26 0-38 0 0 24 0 49 0 73 2 12-18 11-24 6C2141 957 2142 899 2141 841zM2478 831c7-2 23-5 22 7 0 56 0 112 0 168 0 5 1 12-6 12 -6-0-18 3-18-6 -1-53 0-106-0-159C2476 846 2473 837 2478 831zM2709 831c5-3 12-2 18-1 5 2 3 7 4 11 0 44 0 88 0 132 -1 11 10 22 21 20 10-1 17-11 17-20 0-45 0-90 0-135 -2-11 12-9 19-8 4 0 5 5 5 8 0 45 0 90 0 135 1 17-9 33-25 41 -19 10-44 2-55-15 -7-9-8-21-8-32 0-41 0-82 0-123C2707 840 2705 834 2709 831zM2822 844c-1-7 5-13 11-13 16-0 33-1 49 0 5 5 5 18 0 23 -12 2-24 0-36 1 0 19 0 38 0 57 12 1 26-2 38 2 2 7 4 16-1 22 -12 2-24 0-36 1 0 19 0 38 0 58 12 1 25-2 37 1 3 6 3 16-0 22 -16 3-32 1-47 1 -7 1-14-5-14-12C2822 952 2822 898 2822 844zM1500 834c24-11 53 6 58 31 1 9 3 18-1 27 -7 3-16 3-22-1 -2-8-0-15-2-23 -3-9-14-16-23-12 -11 3-18 19-10 28 19 26 38 50 56 76 11 26-12 59-40 58 -27 1-48-25-44-51 -4-14 16-14 23-9 3 11-2 26 10 33 13 10 33-5 29-20 -19-28-41-54-60-82C1467 868 1479 842 1500 834z"/><path d="M1849 844c-1-7 5-14 12-13 12-0 24-0 36 0 19 2 36 17 39 36 2 20 3 42-12 57 7 9 13 19 12 31 -0 20 1 40-1 60 -5 4-11 2-17 2 -5 0-8-3-7-8 -1-18 0-36-0-55 0-9-8-17-17-18 -7-1-14-0-21-0 -0 25 1 50-0 76 -2 7-10 5-15 5 -5 1-10-2-9-8C1848 954 1848 899 1849 844zM1873 856c0 19 0 38 0 57 13 0 32 3 38-13 2-11 3-24-2-35C1902 852 1885 856 1873 856z"/><path d="M2022 872c1-26 28-45 53-39 23 4 38 29 35 51 3 14-15 12-23 9 -2-9 1-18-3-26 -5-10-20-13-29-6 -6 4-8 11-8 18 0 32 0 64 0 96 -1 10 6 19 16 21 11 2 23-7 23-18 1-13 0-26 0-39 -6-1-14 2-19-3 -1-7-3-15 2-21 12-1 24-1 36-0 5 0 5 6 5 9 0 19 0 38-0 57 -1 23-24 42-47 39 -22-1-41-20-41-42C2021 941 2021 906 2022 872zM2258 852c-1-7-3-15 2-21 20-2 40-1 60-1 12-1 8 14 8 21 -5 6-15 2-22 3 -1 53 1 107-1 160 -5 5-18 5-23 0 -1-53-0-107-1-160C2273 854 2264 858 2258 852zM2606 839c17-11 40-9 54 5 13 12 16 32 12 49 -7 2-15 2-22-0 -3-11 2-24-8-32 -11-11-33-2-32 14 -0 33 0 66-0 99 -1 10 6 19 16 20 11 2 23-6 23-18 1-13 0-26 0-39 -6-1-14 2-19-3 -1-7-3-15 2-21 12-1 24-1 36-0 5-0 5 6 5 9 0 19 0 38-0 57 -2 23-24 41-47 39 -22-1-41-20-40-42 -0-33 0-66 0-99C2585 862 2592 847 2606 839zM2930 834c24-11 53 6 59 31 1 9 3 18-1 27 -6 3-14 2-20 1 -6-9 1-23-8-32 -10-11-30-5-32 10 -3 8 4 14 8 19 17 23 35 46 51 69 8 21-4 48-26 56 -17 7-38 1-49-14 -10-12-11-29-9-43 6-5 14-3 21-2 5 4 2 11 3 17 -1 12 11 23 23 20 12-2 20-19 11-29 -18-25-37-49-55-74C2897 870 2909 842 2930 834zM3041 834c24-11 53 6 59 31 1 9 3 19-1 27 -7 2-16 4-22-1 -3-10 2-22-6-30 -7-8-20-8-26-0 -5 5-8 15-4 21 19 26 39 51 57 78 9 22-6 50-29 56 -22 7-47-7-53-29 -3-10-3-20-1-30 5-5 14-3 21-2 5 4 2 11 3 17 -1 12 11 23 22 20 12-2 20-19 11-29 -17-22-33-45-50-67C3005 878 3018 843 3041 834zM891 831c7 12 14 24 20 36 14 3 28 5 41 8 -9 10-19 20-29 30 2 14 3 28 5 42 -13-6-25-12-38-18 -13 6-25 12-38 18 2-14 4-28 5-42 -10-10-19-20-29-31 14-3 28-5 41-8C878 856 885 844 891 831zM3367 868c7-12 14-25 20-37 7 12 14 24 20 37 14 3 27 5 41 8 -10 10-19 20-29 30 2 14 3 28 5 42 -13-6-25-12-38-18 -13 6-25 12-38 18 2-14 4-28 5-42 -10-10-19-20-29-30C3339 873 3353 871 3367 868zM2366 995c8-7 21-3 27 5 7 11 4 24-1 35 -5 11-16 17-26 23 -2-3-4-5-6-8 11-7 25-17 22-33 -4 1-8 2-13 2C2359 1015 2358 1000 2366 995z"/></svg><br>
+        <svg id="circle" fill="none" stroke-opacity="0.6" viewBox="0 0 480 480"><path transform="rotate(90 240,240)" d="m54 240c0-102.8 83.2-186 186-186 102.8 0 186 83.2 186 186 0 102.8-83.2 186-186 186 -102.8 0-186-83.2-186-186z" stroke-width="70" stroke-dasharray="1170"><animate attributeName="stroke-dashoffset" from="1170" to="0" begin="0" dur="2s"</path></svg>
+        <button id="clearintro" style="display:none;" class="pt-trigger" data-animation="36" data-goto="2">clears intro</button>
+        <div class="pt-message"><p>Your browser does not support CSS animations</p></div>
+      </div>
+    </div>
+    <div class="pt-page pt-page-2">
+      <div class="card">
+        <div class="tophalf"></div>
+        <div class="bottomhalf">
+          <h2 class="name">Henry Dollman</h2>
+          <p class="message">Send me a message!</p>
+          <p class="message">(I am not @HenryDollman on twitter)</p><br>
+          <p class="message">hank@henrygd.me</p>
+          <p id="contact" class="message pt-trigger" data-animation="22" data-goto="3"><a href="#">Contact Form</a></p>
+        </div>
+        <div class="light"></div>
+        <div id="mypic" alt="Picture of me" title="Click to begin hypnosis" onclick="spin()"></div>
+      </div>
+    </div>
+    <div class="pt-page pt-page-3">
+      <div class="messagecard">
+        <div class="email">
+          <script>var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe"
+            style="display:none;" onload="if(submitted)
+            {document.getElementById('nextpage').click();}"></iframe>
+            <form action="https://docs.google.com/forms/d/1Re2XULlZOlPFxPDsPM3XvyyzSpwK5eiY63coqe1UCHg/formResponse" id="ss-form" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+               <label for="entry_1889136421">Your Email Address</label><br>
+              <input type="text" name="entry.1889136421" id="entry_1889136421" required pattern="[\w\.]+@\w+\.[\w\.]+" placeholder="Please enter a valid email"><br>
+               <label for="entry_1465833048">Message</label><br>
+              <textarea name="entry.1465833048" id="entry_1465833048" required placeholder="At least ten characters"></textarea>
+              <input type="submit" name="Submit" value="Send Message" id="ss-submit" class="jfk-button">
+            </form>
+            <button id="nextpage" style="display:none;" class="pt-trigger" data-animation="22" data-goto="4">Goes to next page</button>
+        </div>
+      </div>
+    </div>
+    <div class="pt-page pt-page-4">
+      <div class="messagecard">
+          <div style="margin-top:13em;">
+            <p class="name">Message sent. Thank you!</p>
+            <p id="home" class="message pt-trigger" data-animation="22" data-goto="2"><a href="#">Return Home</a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+    <script> // Hides arrow during intro
+      $(".meny-arrow").delay(3700).queue(function(){$(this).css("visibility","visible").dequeue();})
+    </script>
+    <script> // Progresses past intro
+      setTimeout("document.getElementById('clearintro').click();",3000);</script>
+    <script> // Initializes menu (meny.js)
+      var meny = Meny.create({
+        menuElement: document.querySelector( '.meny' ),
+        contentsElement: document.querySelector( '.pt-wrapper' ),width:260,overlap:0,threshold:50});
+      if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {var contents = document.querySelector( '.pt-wrapper' );contents.style.padding = '0px';contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';}</script>
+    <script> // Spins the photo
+      function spin(){
+        var myElement = document.querySelector("#mypic");myElement.setAttribute('class','spin');
+          myElement.title = "You are getting sleeeepy";myElement.onclick = function(){stopspin()};}
+      function stopspin(){
+        var myElement = document.querySelector("#mypic");myElement.setAttribute('class','stopspin');
+          myElement.title = "Click to restart hypnosis";myElement.onclick = function(){spin()};}</script>
+    <script> // google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40745505-4', 'auto');
+  ga('send', 'pageview');</script>
+    <style>
+      /*Page transition animations*/.pt-page-rotateFall{-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-animation:rotateFall 1s both ease-in;animation:rotateFall 1s both ease-in}@-webkit-keyframes rotateFall{0%{-webkit-transform:rotateZ(0deg)}20%{-webkit-transform:rotateZ(10deg);-webkit-animation-timing-function:ease-out}40%{-webkit-transform:rotateZ(17deg)}60%{-webkit-transform:rotateZ(16deg)}100%{-webkit-transform:translateY(100%) rotateZ(17deg)}}@keyframes rotateFall{0%{-webkit-transform:rotateZ(0deg);transform:rotateZ(0deg)}20%{-webkit-transform:rotateZ(10deg);transform:rotateZ(10deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:rotateZ(17deg);transform:rotateZ(17deg)}60%{-webkit-transform:rotateZ(16deg);transform:rotateZ(16deg)}100%{-webkit-transform:translateY(100%) rotateZ(17deg);transform:translateY(100%) rotateZ(17deg)}}.pt-page-scaleUp{-webkit-animation:scaleUp .7s ease both;-moz-animation:scaleUp .7s ease both;animation:scaleUp .7s ease both}@-webkit-keyframes scaleUp{from{opacity:0;-webkit-transform:scale(.8)}}@keyframes scaleUp{from{opacity:0;-webkit-transform:scale(.8);transform:scale(.8)}}.pt-page-scaleDownUp{-webkit-animation:scaleDownUp .5s ease both;-moz-animation:scaleDownUp .5s ease both;animation:scaleDownUp .5s ease both}.pt-page-delay300{-webkit-animation-delay:.3s;-moz-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes scaleUp{from{opacity:0;-webkit-transform:scale(.8)}}@-moz-keyframes scaleUp{from{opacity:0;-moz-transform:scale(.8)}}@keyframes scaleUp{from{opacity:0;transform:scale(.8)}}@-webkit-keyframes scaleDownUp{to{opacity:0;-webkit-transform:scale(1.2)}}@-moz-keyframes scaleDownUp{to{opacity:0;-moz-transform:scale(1.2)}}@keyframes scaleDownUp{to{opacity:0;transform:scale(1.2)}}
+      /*Various*/.meny-arrow{animation:bounce 1s 1 4s;-webkit-animation:bounce 1s 1 4s;-moz-animation:bounce 1s 1 4s}@keyframes bounce{50%{left:4.5em;top:4em;width:8.75em;height:8.75em;}}@-webkit-keyframes bounce{50%{left:4.5em;top:4em;width:8.75em;height:8.75em;}}@-moz-keyframes bounce{50%{left:4.5em;top:4em;width:8.75em;height:8.75em;}}.meny-arrow{z-index:10;position:fixed;width:2.5em;height:2.5em;border-radius:0.3em;left:0.5em;top:0.5em;-webkit-transition:opacity 0.4s ease 0.4s;-moz-transition:opacity 0.4s ease 0.4s;-ms-transition:opacity 0.4s ease 0.4s;-o-transition:opacity 0.4s ease 0.4s;transition:opacity 0.4s ease 0.4s;}.meny-active .meny-arrow{opacity:0;-webkit-transition:opacity 0.2s ease;-moz-transition:opacity 0.2s ease;-ms-transition:opacity 0.2s ease;-o-transition:opacity 0.2s ease;transition:opacity 0.2s ease;}.goaway{display:none;}@keyframes fadein{from{opacity:0;}to{opacity:1;}}@-webkit-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-moz-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-ms-keyframes fadein{from{opacity:0;}to{opacity:1;}}.spin{animation:spin 2s infinite linear;-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-ms-animation:spin 2s infinite linear;}@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);}}@-moz-keyframes spin{from{-moz-transform:rotate(0deg);}to{-moz-transform:rotate(360deg);}}@-ms-keyframes spin{from{-ms-transform:rotate(0deg);}to{-ms-transform:rotate(360deg);}}.stopspin{-animation:stopspin 0.5s;-webkit-animation:stopspin 0.5s;-moz-animation:stopspin 0.5s;-ms-animation:stopspin 0.5s;}@keyframes stopspin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@-webkit-keyframes stopspin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@-moz-keyframes stopspin{from{-moz-transform:rotate(0deg);}to{-moz-transform:rotate(360deg);}}@-ms-keyframes stopspin{from{-ms-transform:rotate(0deg);}to{-ms-transform:rotate(360deg);}}*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}.clearfix:before,.clearfix:after{content:" ";display:table;}.clearfix:after{clear:both;}.pt-wrapper{position:relative;background-size:cover;background-attachment:fixed;background-position:center;width:100%;height:100%;-webkit-perspective:1200px;-moz-perspective:1200px;perspective:1200px;}.pt-page{width:100%;height:100%;position:absolute;top:0;left:0;visibility:hidden;overflow:hidden;overflow-y:auto;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;}.pt-page-current,.no-js .pt-page{visibility:visible;z-index:1;}.no-js body{overflow:auto;}.pt-page-ontop{z-index:999;}:-moz-ui-invalid{box-shadow:none;}</style>
+  </body>
+</html>
+
+<!-- Arizona's Canyon: Photo by Andrew Langdal (CC) https://www.flickr.com/photos/andorpro/4325152529
+Western Hills: Photo by Pete Zarria (CC) https://www.flickr.com/photos/toby_d1/5820755329 -->

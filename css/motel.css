@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Montserrat+Subrayada);
+
+html,body{height:100%;overflow:hidden;margin:0;padding:0;}
+body{background-color:#222;color:#222;}
+
+a{color:#EE6F74;text-decoration:none;-webkit-transition:0.1s color ease;-moz-transition:0.1s color ease;-ms-transition:0.1s color ease;
+    -o-transition:0.1s color ease;transition:0.1s color ease;}
+a:hover{color:#0099FF;text-shadow:1px 1px 11px rgba(0,122,255,1);animation:fadein 0.1s 2;-webkit-animation:fadein 0.1s 2;
+    -moz-animation:fadein 0.1s 2;-ms-animation:fadein 0.1s 2;}
+#motel{color:#0099FF;text-shadow:1px 1px 11px rgba(0,122,255,1);pointer-events:none;}
+
+.intro{position:absolute;display:block;width:45%;top:30%;left:27.5%;max-height:20%;fill:#D62C01;stroke:#D62C01;
+    -webkit-animation:fadein 2s;animation:fadein 0.1s 6s 2s;-moz-animation:fadein 2s;-ms-animation:fadein 2s;}
+#circle{position:absolute;margin-top:10%;left:46.5%;width:7%;}
+
+.meny{display:none;overflow:auto;background:#333;font-family:'Poiret One';color:#eee;font-weight:bold;}
+.meny h2{margin:7vh 0vh 2vh 0vh;}
+.meny ul li{display:inline-block;width:200px;list-style:none;font-size:20px;padding:3px 10px;}
+.meny ul li:before{content:'-';margin-right:5px;color:rgba( 255,255,255,0.2 );}
+
+.pt-wrapper{background:url('../images/motel.jpg');}
+.pt-page-1 {background:#0D1D35;overflow:hidden;}
+
+/*No Animation Support Message*/
+.pt-message{display:none;position:absolute;z-index:99999;bottom:0;left:0;width:100%;background:#da475c;color:#fff;text-align:center;}
+.pt-message p{margin:0;line-height:60px;font-size:26px;}
+.no-cssanimations .pt-message{display:block;}
+
+.card{background:rgba(153,117,0,0.51);width:22em;height:35em;margin:auto;margin-top:8vh;position:relative;border:0.15em solid #1B366F;
+    overflow:hidden;-moz-box-shadow:0em 0em 0.5em 0em #1E1F4E;box-shadow:0em 0em 0.5em 0em #1E1F4E;}
+
+.tophalf{display:block;background:url('../images/small_motel.jpg') no-repeat;background-size:contain;height:16.5em;}
+
+.light{position:absolute;right:1.7em;top:1.7em;height:0.1em;width:0.3em;border-radius:50%;background-color:#E3C689;opacity:0;
+    box-shadow:-3px 5px 75px 50px #AA8B45;-webkit-box-shadow:-0.3em 1em 8.5em 2.4em #AA8B45;-moz-box-shadow:-3px 5px 75px 50px #AA8B45;
+    animation:fadein 0.15s 3s 5;-ms-box-shadow:-0.3em 1em 8.5em 2.4em #AA8B45;-webkit-animation:fadein 0.15s 3s 5;
+    -webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;}
+
+#mypic{position:absolute;left:6.75em;top:12.3em;background:url('../images/me.jpg') no-repeat;background-size:cover;width:8em;
+    height:8em;border-radius:100%;border:0.2em solid #3A5C8F;cursor:pointer;box-shadow:0em 0em 0.5em 0.2em rgba(14,24,41,0.83);}
+#mypic:after{content:'';position:absolute;left:0;right:0;top:0;bottom:0;border-radius:100%;
+    background:-webkit-linear-gradient(left top,rgba(0,0,168,0.5),rgba(219,0,0,0.4));
+    background:-o-linear-gradient(left top,rgba(0,0,168,0.5),rgba(219,0,0,0.4));
+    background:-moz-linear-gradient(left top,rgba(0,0,168,0.5),rgba(219,0,0,0.4));
+    background:linear-gradient(left top,rgba(0,0,168,0.5),rgba(219,0,0,0.4));}
+
+.bottomhalf{width:94%;height:17.4em;margin:1% 3%;background:#242638;border:0.1em solid #0B85AC;border-radius:0.2em;
+    -moz-box-shadow:0em 0em 0.5em 0.2em rgba(0,10,255,0.66);box-shadow:0em 0em 0.5em 0.2em rgba(0,10,255,0.66);}
+
+.name{color:#00C2FF;font-size:1.5em;text-align:center;line-height:1.75;border-top:0.05em dashed #00C2FF;border-bottom:0.05em dashed #00C2FF;
+    width:65%;font-family:'Poiret One';margin:2.9em auto;margin-bottom:1.3em;text-shadow:1px 1px 11px rgba(0,122,255,1);
+    animation:fadein 0.1s 13s 7;-webkit-animation:fadein 0.1s 13s 7;-moz-animation:fadein 0.1s 13s 7;-ms-animation:fadein 0.1s 13s 7;}
+
+.message{font-size:0.75em;font-family:'Montserrat Subrayada';text-align:center;line-height:0.55;color:#FF9900;text-shadow:1px 1px 11px #FF0505;
+    animation:fadein 0.1s 6s 3;-webkit-animation:fadein 0.1s 6s 3;-moz-animation:fadein 0.1s 6s 3;-ms-animation:fadein 0.1s 6s 3;}
+
+.messagecard{background:rgba(36,38,56,0.67);font-family:"Poiret One";color:#00C2FF;font-size:1em;font-weight:bold;
+    text-shadow:1px 1px 11px rgba(0,122,255,1);width:22em;height:35em;margin:auto;margin-top:8vh;border:0.15em solid #1B366F;
+    -moz-box-shadow:0em 0em 0.5em 0em #1E1F4E;box-shadow:0em 0em 0.5em 0em #1E1F4E;}
+.messagecard .name{width:100%;border:none;}
+
+.email{margin:-0.2em 0em 0em 0.45em;font-size:1.2em}
+.email textarea{width:21.5em;max-width:21.5em;height:25.5em;max-height:25.5em;padding:0.3em 0.1em 0.3em 0.3em}
+.email #entry_1889136421{width:13em;padding:0.1em 0.1em 0.3em 0.3em;margin-bottom:0.8em;}
+.email #entry_1889136421,#entry_1465833048{font-family:'Poiret One';font-weight:bold;font-size:0.8em;border:0.1em solid #AC8200;
+    box-shadow:0.05em 0.05em 0.5em 0.01em rgba(0,0,0,0.3) inset;background-color:rgba(255,255,255,0.4);margin-top:0.2em;letter-spacing: 0.7px;}
+#ss-form{margin-top:1em;}
+#ss-form label{margin-left:0.1em;}
+#entry_1889136421:invalid{color:#ECE6E6;background-color:#9E1C00;}
+.jfk-button{width:auto;padding:0.1em 0.3em 0.2em 0.4em;background:#4B8EFA;border:0.1em solid #3079ED;border-radius:0.3em;
+    font-size:0.9em;color:#FAFAFA;cursor:pointer;-webkit-appearance:none;font-family:'Poiret One';font-weight:bold;margin-top:0.5em;}
+.jfk-button:hover{background:#3079ED}
+
+@media (min-device-width:1900px){
+.card{width:30em;height:48em;margin-top:12vh;}
+.tophalf{height:22.3em;}
+#mypic{left:9em;top:16.2em;width:11.8em;height:11.8em;}
+.bottomhalf{margin:2.5% 3%;height:23.8em;}
+.name{font-size:2em;margin-top:3.1em;}
+.message{font-size:0.95em;}
+.messagecard{width:30em;height:48em;margin-top:12vh;}
+.messagecard .name{width:100%;}
+.email{font-size:1.36em;}
+.email textarea{width:26.1em;max-width:26.1em;height:32em;max-height:32em;}
+.light{right:2.3em;top:2.3em;-webkit-box-shadow:-0.8em 1em 11em 3.5em #AA8B45;}}
+
+@media (max-device-width:400px){
+.card{margin-top:6vh;margin-bottom:1.5em;}
+.messagecard{margin-top:6vh;margin-bottom:1.5em;}
+.logo{max-height:80px;}
+.intro{max-height:80px;}
+.intro{left:5%;width:90%;}
+.intro #circle{left:44%;width:12%;}}

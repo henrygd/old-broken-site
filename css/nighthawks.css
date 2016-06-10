@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Voltaire);
+
+html,body{height:100%;overflow:hidden;margin:0;padding:0;}
+body{background-color:#222;color:#222;}
+
+a{color:#c2575b;text-decoration:none;-webkit-transition:0.15s color ease;-moz-transition:0.15s color ease;-ms-transition:0.15s color ease;
+    -o-transition:0.15s color ease;transition:0.15s color ease;}
+a:hover{color:#f76f76;}
+#nighthawks{color:#f76f76;pointer-events:none;}
+
+.intro{position:absolute;display:block;width:45%;top:30%;left:27.5%;max-height:20%;fill:#222;stroke:#222;
+    -webkit-animation:fadein 2s;animation:fadein 0.1s 6s 2s;-moz-animation:fadein 2s;-ms-animation:fadein 2s;}
+#circle{position:absolute;margin-top:10%;left:46.5%;width:7%;}
+
+.meny{display:none;overflow:auto;background:#333;font-family:'Voltaire';color:#eee;font-weight:bold;letter-spacing:0.1em;}
+.meny h2{margin:7vh 0vh 2vh 0vh;}
+.meny ul li{display:inline-block;width:200px;list-style:none;font-size:20px;padding:2px 10px;}
+.meny ul li:before{content:'-';margin-right:5px;color:rgba( 255,255,255,0.2 );}
+
+.pt-wrapper{background:url('https://res.cloudinary.com/henrygd/image/upload/v1413610374/nighthawks.jpg');}
+.pt-page-1 {background:#CA4449;overflow:hidden;}
+
+/*No Animation Support Message*/
+.pt-message{display:none;position:absolute;z-index:99999;bottom:0;left:0;width:100%;background:#da475c;color:#fff;text-align:center;}
+.pt-message p{margin:0;line-height:60px;font-size:26px;}
+.no-cssanimations .pt-message{display:block;}
+
+.card{background:rgba(37,37,37,0.78);width:22em;height:35em;margin:auto;margin-top:8vh;position:relative;border:0.1em solid #c2575b;
+	overflow:hidden;-moz-box-shadow:0em 0em 1em 0em #000000;box-shadow:0em 0em 1em 0em #000000;}
+
+.tophalf{display:block;background:url('https://res.cloudinary.com/henrygd/image/upload/v1413524971/small_nighthawks.jpg') no-repeat;
+	background-size:contain;height:16.5em;}
+
+#mypic{position:absolute;left:6.75em;top:12.3em;background:url('../images/me.jpg') no-repeat;background-size:cover;width:8em;
+	height:8em;border-radius:100%;border:0.15em solid #884346;cursor:pointer;
+	box-shadow:0em 0em 0.5em 0.2em rgba(0,0,0,0.3);}
+#mypic:after{content:'';position:absolute;left:0;right:0;top:0;bottom:0;border-radius:100%;
+    background:rgba(0,0,0,0.2);}
+
+.bottomhalf{width:94%;height:17.3em;margin:2% 3%;background:rgba(17,17,17,0.35);border:0.1em solid #c2575b;
+	-moz-box-shadow:0em 0em 0.5em 0.2em #351F1F;box-shadow:0em 0em 0.5em 0.2em #351F1F;}
+
+.name{color:#CAC8D1;font-size:1.6em;text-align:center;line-height:1.5;border-top:0.05em solid #b0b0b0;border-bottom:0.05em solid #b0b0b0;
+	font-family:'Voltaire';font-weight:400;margin:2.6em auto;margin-bottom:1.3em;width:90%;}
+
+.message{font-size:0.95em;font-family:'Voltaire';text-align:center;line-height:0.45;color:#CAC8D1;text-shadow:0em 0em 0.4em #2E2E2E;}
+
+.messagecard{background:rgba(0,0,0,0.71);font-family:'Voltaire';color:#CAC8D1;font-size:1em;width:22em;height:35em;margin:auto;
+	margin-top:8vh;border:0.1em solid #c2575b;-moz-box-shadow:0em 0em 1em 0em #000000;box-shadow:0em 0em 1em 0em #000000;}
+.messagecard .name{border:none;}
+
+.email{margin-left:0.4em;font-size:1.1em;}
+.email textarea{width:21.2em;max-width:21.2em;height:24.5em;max-height:24.5em;padding:0.3em 0.1em 0.3em 0.3em}
+#entry_1889136421{width:13em;padding:0.1em 0.1em 0.3em 0.3em;margin-bottom:1em;}
+#entry_1889136421,#entry_1465833048{font-family:'Voltaire';font-size:0.9em;margin-top:0.2em;background:rgba(255,255,255,0.78);
+	box-shadow:0.05em 0.05em 0.5em 0.01em rgba(0,0,0,0.3) inset;border:none;}
+.error,.required,.errorbox-bad{color:#c43b1d;}
+.jfk-button{width:auto;padding:0.2em 0.4em 0.2em 0.4em;background:#4B8EFA;border:0.1em solid #3079ED;
+	font-size:0.9em;color:#FAFAFA;cursor:pointer;-webkit-appearance:none;font-family:'Voltaire';margin-top:0.5em;}
+.jfk-button:hover{background:#3079ED;}
+
+#ss-form{margin-top:0.8em;}
+#ss-form label{margin-left:0.1em;}
+#entry_1889136421:invalid{
+  color:#ECE6E6;
+  background-color:#9E1C00;}
+
+@media (min-device-width:1900px){
+.card{width:30em;height:47.7em;margin-top:12vh;}
+.tophalf{height:22.3em;}
+#mypic{left:9em;top:16.2em;width:11.8em;height:11.8em;}
+.bottomhalf{margin:2.5% 3%;height:23.8em;}
+.name{font-size:2em;margin-top:3em;}
+.message{font-size:1.2em;}
+.messagecard{width:30em;height:47.7em;margin-top:12vh;}
+.messagecard .name{width:100%;}
+.email{font-size:1.36em;}
+.email textarea{width:23.4em;max-width:23.4em;height:28em;max-height:28em;}}
+
+@media (max-device-width:400px){
+.card{margin-top:6vh;margin-bottom:1.5em;}
+.messagecard{margin-top:6vh;margin-bottom:1.5em;}
+.intro{max-height:80px;}
+.intro{left:5%;width:90%;}
+.intro #circle{left:44%;width:12%;}}
